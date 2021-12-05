@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sky Unisex Salon</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/SalonLogo.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <!-- tried using the javascript method for appinsights and npm, leaving as is, not really getting desired result of data flowing into pageviews-->
+  <script type="text/javascript">
+    !function(T,l,y){var S=T.location,u="script",k="instrumentationKey",D="ingestionendpoint",C="disableExceptionTracking",E="ai.device.",I="toLowerCase",b="crossOrigin",w="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"4",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[I](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,p,l,u;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][I]()]=i[1])}if(!e[D]){var r=e.endpointsuffix,o=r?e.location:null;e[D]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[k]||d[k]||"",p=s[D],l=p?p+"/v2/track":config.endpointUrl,(u=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=l,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),u.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,l)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:w,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(w,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(u,l))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(u);n.src=h;var e=y[b];return!e&&""!==e||"undefined"==n[b]||(n[b]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(u)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[C]&&!0!==s[C]){method="onerror",t(["_"+method]);var c=T[method];T[method]=function(e,t,n,a,i){var r=c&&c(e,t,n,a,i);return!0!==r&&m["_"+method]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);(T[t]=n).queue&&0===n.queue.length&&n.trackPageView({})}(window,document,{
+    src: "https://az416426.vo.msecnd.net/scripts/b/ai.2.min.js", // The SDK URL Source
+    //name: "appInsights", // Global SDK Instance name defaults to "appInsights" when not supplied
+    //ld: 0, // Defines the load delay (in ms) before attempting to load the sdk. -1 = block page load and add to head. (default) = 0ms load after timeout,
+    //useXhr: 1, // Use XHR instead of fetch to report failures (if available),
+    //crossOrigin: "anonymous", // When supplied this will add the provided value as the cross origin attribute on the script tag
+    cfg: { // Application Insights Configuration
+        instrumentationKey: "InstrumentationKey=6e875c5a-3182-4b4e-bcbf-2716caafe6fe;IngestionEndpoint=https://westus2-0.in.applicationinsights.azure.com/"
+        /* ...Other Configuration Options... */
+    }});
+    </script>
+<!-- <script>
+  alert('hell0 - second approach of using npm');
+   import { ApplicationInsights } from '@microsoft/applicationinsights-web'
+
+  // const appInsights = new ApplicationInsights({ config: {
+  //   instrumentationKey: 'InstrumentationKey=6e875c5a-3182-4b4e-bcbf-2716caafe6fe;IngestionEndpoint=https://westus2-0.in.applicationinsights.azure.com/'
+  //   /* ...Other Configuration Options... */
+  // } });
+  // appInsights.loadAppInsights();
+  // appInsights.trackPageView(); // Manually call trackPageView to establish the current user/session/pageview
+alert('hell1');
+</script> -->
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="header">
+    <div id="logo">
+<!--      <img src="images/SalonLogo.png" />-->
+    </div>
+    <ul>
+      <li><a href="#servicesBanner">SERVICES</a></li>
+      <li><a href="#locationBanner">LOCATION</a></li>
+      <li><a href="#purposeBanner">PURPOSE</a></li>
+      <li><a href="#appointmentBanner">APPOINTMENT</a></li>
+
+    </ul>
+  </nav>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h1>Sky Unisex Salon</h1>
+  </div>
+
+  <!-- Journal -->
+  <div class="journal">
+    <div class="first photo">
+      <div class="image-container">
+        <img src="images/Facial.jpg">
+      </div>
+      <span class="caption">An enriching facial: one of the numerous servies offered at Sky.</span>
+    </div>
+  </div>
+
+  <div id="servicesBanner">
+    <div class="postbanner">
+      <h1>Services</h1>
+    </div>
+  </div>
+
+
+  <div class="contentColumn">
+    <div class="serviceImage">
+      <img src="images/ServicesIcon2.jpg" />
+
+    </div>
+
+    <div class="servicesContent">
+      <h1>More than just haircuts:</h1>
+
+      <table class="services" >
+        <tr>
+          <td>Eyebrow</td>
+          <td>&#8377; 30/- Starting form</td>
+        </tr>
+      <tr>
+        <td>Shaving</td>
+        <td>&#8377; 50/-</td>
+      </tr>
+     <tr>           
+      <td>Hair Cut </td>
+      <td>&#8377; 80/-</td>
+     </tr>
+       <tr>
+          <td> Hair Spa</td> 
+          <td> &#8377; 450/- </td>
+
+      </tr>
+    
+        <tr>
+          <td>Facials</td>
+          <td>&#8377; 550/- </td>
+       </tr>
+       <tr>
+        <td>Waxing</td>
+        <td>&#8377; 200/- </td>
+      </tr>
+        <tr>
+          <td>Manicure</td>
+          <td>&#8377; 250/- </td>
+        </tr>
+        <tr>
+          <td> Pedicure</td>
+          <td>&#8377; 300/-</td>
+        </tr>
+          <td>Waxing</td>
+          <td>&#8377; 50/- </td>
+        </tr>
+        
+        <tr>
+          <td colspan="2"> <a href="price.html">More details</a></td>
+          
+        </tr>
+      </table>
+
+    </div>
+  </div>
+
+  <div id="locationBanner">
+    <div class="postbanner">
+      <h1>Location</h1>
+
+    </div>
+  </div>
+
+  <div class="contentColumn">
+    <div class="box">
+      <h1>Location</h1>
+      <div id="content2">
+        <p>
+          <!-- <a target="_blank" href="https://goo.gl/maps/XkTbDRbduKN1cShm7" >Street Number 4, Roshanpura, Najafgarh, New Delhi - 110043</a> -->
+          Street Number 4, Roshanpura, Najafgarh, New Delhi - 110043
+        </p>
+      </div>
+    </div>
+
+    <div class="box">
+      <h1>Open Hours</h1>
+      <ul>
+        <li>Everyday: 8:30am - 9pm</li>
+        <li>Tuesday:Closed</li>
+      </ul>
+    </div>
+
+
+    <div class="locationContentMap">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2114.141583851419!2d76.989462!3d28.598466999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d101f06c3688d%3A0x191f321886ec7c74!2sSky%20unisex%20salon!5e1!3m2!1sen!2sus!4v1598553537813!5m2!1sen!2sus"
+        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <!--width="600" height="450" -->
+
+    </div>
+
+
+    <div class="box">
+      <!--  <h1>Contact</h1>
+      <ul>
+    <li>Phone: 921-000-7090</li> -->
+      </ul>
+    </div>
+  </div>
+
+  <div id="purposeBanner">
+    <div class="postbanner">
+      <h1>Purpose</h1>
+    </div>
+  </div>
+
+  <div class="contentColumn">
+    <div class="locationContent">
+      <h1>Sky Unisex Salon</h1>
+      <p>was created in 2012 to provide afforable and professional haircuts to our customers.
+        We live true to our intent and make it a goal that our customers leave
+        satisfied and confident in their presentation of themselves. </p>
+    </div>
+  </div>
+
+  <div id="appointmentBanner">
+    <div class="postbanner">
+      <h1>Appointment</h1>
+    </div>
+  </div>
+
+
+  <form action="submit.html" method=get>
+    <div class="formcontainer">
+
+
+      <table class="test">
+        <tr>
+          <td>
+            <label for="firstName">First Name:</label>
+          </td>
+          <td>
+            <input type="text" name="firstname" id="firstname" placeholder="First Name" required size="25"
+              maxlenght="50">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="lastName">Last Name:</label>
+          </td>
+          <td>
+            <input type="text" name="lastname" id="lastname" placeholder="Last Name" required size="25" maxlength="50">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email:</label>
+          </td>
+          <td>
+            <input type="email" name="email" id="email" placeholder="Email abc@domain.com" required size="25"
+              maxlength="50">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="phone">Phone:</label>
+          </td>
+          <td>
+            <input type="tel" name="phone" id="phone" placeholder="Phone 9876543210" size="25" maxlength="14"
+              pattern="[0-9]{10}"><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <lable for="comments">Comments:</lable>
+          </td>
+          <td>
+            <textarea name="comments" id="comments" col="10" rows="10"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td>
+            <input type="reset" value="Reset">
+            <input class="button" type="submit" value="Submit!">
+          </td>
+        </tr>
+      </table>
+    </div>
+  </form>
+
+  <!-- Footer -->
+  <footer>
+    <div class="content">
+      <p>© 2020 Copyright <span class="name">Sky Unisex Salon</span>. All rights reserved. | Designed by <a
+          href="https://www.instagram.com/_kavitaShokeen/?hl=en"> Kavita Shokeen</a>.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

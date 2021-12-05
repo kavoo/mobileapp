@@ -1,0 +1,13 @@
+{
+  "name": "skysalon",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "dependencies": {
+    "@microsoft/applicationinsights-web": "^2.5.10",
+    "applicationinsights": "^1.8.7",
+    "express": "~4.16.1"
+  }
+}

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script type="text/javascript">
+
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            document.write(`
+                <div id='message'>
+                    <h1>
+                            Thank you, ` + urlParams.get('firstname') + `! for contacting us, we will get back to you earliest possible!
+                    </h1>
+                </div>
+                `);
+    
+        </script>
+    </head>
+<body>
+
+</body>
+<html>

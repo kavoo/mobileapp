@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "$web",
+			"uri": "azurestorage:/$web?resourceId=/subscriptions/f51ff3bd-cac4-4316-ac74-a113fe48fb03/resourceGroups/skysalon/providers/Microsoft.Storage/storageAccounts/skysalonstorage/Blob Containers/$web"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/node_modules": true
+		}
+	}
+}
