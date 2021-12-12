@@ -1,9 +1,12 @@
+Example Folder: https://github.com/kavoo/mobileapp/tree/main/_Example
+Source Code: https://github.com/kavoo/mobileapp
+
 List of Android Concepts/Structures that you have decided to implement in your project
-	Google Maps
-	WebView
-	RecyclerView
-	Multiple Tabs
-	Fragments
+	• Google Maps
+	• WebView
+	• RecyclerView
+	• Multiple Tabs
+	• Fragments
 
 • Were any of them more difficult/easy than you originally thought
 	I thought it would be easy to get started with ReactJS or Flutter framework but later chose to stay with what I learnt in the class.
@@ -44,4 +47,6 @@ List of Android Concepts/Structures that you have decided to implement in your p
 
 • And Finally, if you had the chance to give yourself advice from before the Planning Proposal assignment, what relevant advice would you give yourself?
 	Clearly list the scope and follow, more is less and less is more. 
-Experiment on copy of code as trying on the primary project made me work on some in progress work problems which I could have discarded but since all work was done on the main copy, I could not proceed without fixing the problems created by hit and trial code. So next time I will do more experiments on copy code or use 
+	Experiment on copy of code as trying on the primary project made me work on some in progress work problems which I could have discarded but since all work was done on the main copy, I could not proceed without fixing the problems created by hit and trial code. So next time I will do more experiments on copy code or use commit/rollback.
+	I will start checkin for my code from the start.
+	I will make progress on regular basis.
