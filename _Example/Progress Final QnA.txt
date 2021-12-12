@@ -1,34 +1,14 @@
-• List of Android Concepts/Structures that you have decided to implement in your project
+List of Android Concepts/Structures that you have decided to implement in your project
+	Google Maps
+	WebView
+	RecyclerView
+	Multiple Tabs
+	Fragments
 
 • Were any of them more difficult/easy than you originally thought
+	I thought it would be easy to get started with ReactJS or Flutter framework but later chose to stay with what I learnt in the class.
 
 • What roadblocks did you hit along the way of developing the app?
-
-
-• Were there any planned features that you had to cut/change?
-
-• Are there any parts of your app that aren't currently working/bugged?
-
-• What did you do to try to fix it?
-
-• Do you think more time could have helped you fix it?
-
-• If you were to build this app again, what would you do differently?
-
-• Would you have changed the scope of your project?
-
-• And Finally, if you had the chance to give yourself advice from before the Planning Proposal assignment, what relevant advice would you give yourself?
-
-• What were you able to accomplish this week?
-	• Github repo created
-	• Unable to copy past the code, so created a new project again
-	• This time created a tabbed project to give additional functionality
-	• Compared my project with another android app "Great Clips" to get some ideas
-		○ Planning to add an option for taking an appointment
-		○ Learned how to store data using sqlite app
-		○ Considered using ReactJS Native for web content, also looked into Flutter, but then decided to use the Java approach, for now, may change later. Need to have some working content with what I am comfortable with.
-	• Added the website content to load from local folder
-• Did you face any type of challenges?
 	• Android studio was creating a new repo for the project when connecting to my github account. But I wanted to create a project inside the repo, so I don't have to create a repo for just one project. I then created the repository manually. Connected repo from Android Studio. Created a new project now. But I was unable to run the app. So I closed this project which has repository and the project under it. Instead opened the project folder only and then was able to run the app as well as it was Github connected. I then tried commit and push. Thus now found a way to create multiple projects under a single repo and not just a repo per project.
 	• After creating the repo, I was not able to copy paste code from my old project into this new one, so I followed the steps once again. 
 	• On adding WebView this time from my previous project, app started crashing. I had to debug and found WebView was coming up as null.
@@ -36,35 +16,32 @@
 	• After crash was fixed, Webview was still not visible but was there in the design. I had to set background color, size changes, layout changes to make it work.
 	• Unable to remove the space on top of the webview. Tried making changes in layout, main navigator, main activity, still not fixed.
 	• Local Webpage was not loading properly so had to find a way on how to enable javascript on webview. First I tried showing a popup message to see if JS is working but popup did not show up, even after enabling JS. Then I tried using document.write and found javascript is enabled but popup is not working.
-	• I have still many more css challenges but will work on them later.
-	• Making the map work was very challenging. Most samples were with Activity not Fragment. Secondly, it required some key to be setup. Third, it requies some special kind of image to be able to run in on emulator. Fourth, there are samples with depricated code, and many ways of doing it. Overall was a hard problem for me. But finally was able to run and have a working map in Fragments. 
-• Was something easier to implement than you thought?
-	• Considering the challenges I don't think so but I can say I am feeling using Java project without Flutter or React is looking easier. Although their sites state they make it easy to create a project, I felt the default android options to create the project is more easy to get started.
-• How much time were you able to put into this project and how much more do you think is needed to finish it?
-	• I feel I still need a lot more time as I am going to 
-		○ add data storage to store location information.
-		○ Store appointment and their scheduling. For this project will not be able to store them centrally on a website but if time permits will try that
-		○ Need to find ways to make the web content work well locally
-		○ I have not worked with location and maps
-		
-• Is something stopping your progress?
-	• White Space: There is some whitespace on top of my Fragment content. I am currently not able to remove it.
-	• Web: My web page was not designed for mobile javascript engine, need to make it user friendly.
-	• Map: Need to learn how it works for effective use and add locations of salon, then allow making an appointment. The web implementation seems so much out of the box and feature rich.
+	• Enabling a click on the Map marker did not work initially but after reading how its click can be captured I was able to get hold of a view element and then display my toast using that view
+	• RecylerView required, this time I used the default template and then customized it to my needs. I was not able to set the background color for entire panel 
+
+
+• Were there any planned features that you had to cut/change?
+	Yes following things I wanted to do but haven't been able to complete them all.
+	• I wanted to store the locations data in a database using sqllite but have not been able to implement
+	• Login and authentication with a remote service
+	• Appointment service to store user data remotely
 	
-• What have you done so far to combat it?
-	• White Space: Currently want to make progress on other areas, so skipping white space issue for now.
-	• Web: Made some changes like enabled Javascript, updated CSS, but need more time to make it look better, I think I can do this. Also thinking of making the navigation, on the page, better if time permits.
-• Can you work around this issue?
-	• Time is the only constraint at this point but making progress
-	• Don't want to get stuck on one problem, so holding some of these, to attend once I have some more progress. As starting a project again from scratch ate some of my time
-• Have you asked for help?
-	• Not yet
-• A screenshot of your app (required)
-	• Attached
-• If possible, screenshots showing your progress is a great way to update your progress
-• If not possible, please give a good reason why 
-• Submission of your entire project at this time
-	• Code attached
-• Required, You should have something sizeable to show for the time you have put into this project
-• Also may be good if you need my help on something not working quite right
+
+• Are there any parts of your app that aren't currently working/bugged?
+	No  major issues but minor things like excessive whitespace 
+
+• What did you do to try to fix it?
+	I tried rearranging the controls. Used different layout. Reached out for help.
+
+• Do you think more time could have helped you fix it?
+	Yes, I think I can work on it, but there were other bigger features which focused on and couldn't spend enough time on it.
+
+• If you were to build this app again, what would you do differently?
+	I want to build it using the framework. The html content in the app will be a remote web content or using a framework. Many of its part I will create native UI.
+
+• Would you have changed the scope of your project?
+	Yes, I think I tried to do a full app as in a job one will have to create. It increased my scope for this project.
+
+• And Finally, if you had the chance to give yourself advice from before the Planning Proposal assignment, what relevant advice would you give yourself?
+	Clearly list the scope and follow, more is less and less is more. 
+Experiment on copy of code as trying on the primary project made me work on some in progress work problems which I could have discarded but since all work was done on the main copy, I could not proceed without fixing the problems created by hit and trial code. So next time I will do more experiments on copy code or use 
