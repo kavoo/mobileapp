@@ -1,0 +1,31 @@
+• What were you able to accomplish this week?
+	• Starting thinking about the project, trying web application based approach right now, attaching an image of the progress.
+	• I have decided to make a mobile app for a Salon called SkySalon
+	• I had created a javascript website for it during my earlier course. I wanted to reuse the work done. But my biggest challenge was to see if this idea works. Find how to embed website inside a mobile app.
+	• So this time I experimented on it and was able to do a proof of concept.
+• Did you face any type of challenges?
+	• I had to learn how to create a web application in the mobile which is something new I am learning
+	• I learnt how to use the webview control
+	• Content was not loading then found I have to add permission in the manifest file. Once that was done it started working.
+	• I had to fix the layout challenges which I was able to quickly resolve as it is just a prototype.
+• Was something easier to implement than you thought?
+	Not really, it is challenging for me, I am possibly going to change my approach and make it a native app so I can use more of my learnings
+• How much time were you able to put into this project and how much more do you think is needed to finish it?
+	It is a start, so little slow, but planning to ramp up more and more time.
+• Is something stopping your progress?
+	Not really
+• What have you done so far to combat it?
+	Discussing with friends to take their suggestions and thinking about the customer use cases
+• Can you work around this issue?
+	Yes
+• Have you asked for help?
+	Yes
+• A screenshot of your app (required)
+	Provided
+• If possible, screenshots showing your progress is a great way to update your progress
+• If not possible, please give a good reason why 
+attached
+• Submission of your entire project at this time
+	I have discarded this proof of concept project and migrated code to another project on Github for which I have shared code in the next progress report. If you would like I can share this temporary project but since all good code is moved to new project skipped it for now.
+• Not required, but may be a good way to show what you have done
+• Also may be good if you need my help on something not working quite right
