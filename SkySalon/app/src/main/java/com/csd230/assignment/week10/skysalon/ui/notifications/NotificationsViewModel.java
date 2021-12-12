@@ -1,3 +1,7 @@
+/**
+ * Kavita Shokeen
+ * This class is for showing notifcations
+ */
 package com.csd230.assignment.week10.skysalon.ui.notifications;
 
 import androidx.lifecycle.LiveData;
@@ -10,7 +14,7 @@ public class NotificationsViewModel extends ViewModel {
 
     public NotificationsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+        mText.setValue("There are no new notifications!");
     }
 
     public LiveData<String> getText() {

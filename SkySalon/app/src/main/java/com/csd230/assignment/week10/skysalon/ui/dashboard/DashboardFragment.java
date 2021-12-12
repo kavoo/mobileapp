@@ -1,3 +1,4 @@
+// Kavita Shokeen
 package com.csd230.assignment.week10.skysalon.ui.dashboard;
 
 import android.Manifest;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,16 +29,17 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class DashboardFragment extends Fragment  implements OnMapReadyCallback {
 
     private DashboardViewModel dashboardViewModel;
     private FragmentDashboardBinding binding;
+    // Control holding the google map
     private MapView mapView;
-    private GoogleMap mMap;
-    MapView mMapView;
-    private GoogleMap googleMap;
+    // Using this to show a toast message
+    private View fragmentView;
 
 
     @Override
@@ -51,6 +54,8 @@ public class DashboardFragment extends Fragment  implements OnMapReadyCallback {
         // Set the map ready callback to receive the GoogleMap object
         mapView.getMapAsync(this);
 
+        // Storing view for displaying toast
+        fragmentView = rootView;
         // Get a handle to the fragment and register the callback.
         return rootView;
     }
@@ -68,14 +73,31 @@ public class DashboardFragment extends Fragment  implements OnMapReadyCallback {
      */
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
-        mMap = googleMap;
+
+        GoogleMap mMap = googleMap;
         mMap.getUiSettings().setZoomControlsEnabled(true);
 
         // Adding Marker
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney));
+        LatLng salon_loc = new LatLng(28.5985029, 76.9895227);
+        MarkerOptions markerOptions = new MarkerOptions().position(salon_loc);
+        markerOptions.title("Sky Salon");
+        //markerOptions.snippet("At your service!");
+        Marker marker = mMap.addMarker(markerOptions);
+        marker.showInfoWindow();
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(salon_loc, 10));
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 10));
+        // adding on click listener to marker of google maps.
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                // on marker click we are getting the title of our marker
+                // which is clicked and displaying it in a toast message.
+                String markerName = marker.getTitle();
+                //Toast.makeText( fragmentView, "Clicked location is " + markerName, Toast.LENGTH_SHORT).show();
+                displayToast(fragmentView, "Take user to setup an appointment.");
+                return false;
+            }
+        });
     }
 
     @Override
@@ -108,4 +130,9 @@ public class DashboardFragment extends Fragment  implements OnMapReadyCallback {
         mapView.onLowMemory();
     }
 
+    // helper function to debug
+    public void displayToast(View view, String message) {
+        Toast.makeText(view.getContext(), message,
+                Toast.LENGTH_SHORT).show();
+    }
 }

@@ -22,4 +22,10 @@
         android:name="com.csd230.assignment.week10.skysalon.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_services"
+        android:name="com.csd230.assignment.week10.skysalon.ui.services.ServiceItemFragment"
+        android:label="@string/title_services"
+        tools:layout="@layout/fragment_service_item_list" />
 </navigation>
